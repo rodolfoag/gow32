@@ -9,7 +9,7 @@ var (
 	mutextName = "TGoKernel32"
 )
 
-func Test_CreateSemaphore(t *testing.T) {
+func Test_CreateMutex(t *testing.T) {
 	_, err := CreateMutex(mutextName)
 	if err != nil {
 		t.Fatalf("Error creating mutex: %s", err.Error())
