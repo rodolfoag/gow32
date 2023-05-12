@@ -23,6 +23,8 @@ func main() {
 		fmt.Printf("Mutex %s create. Press enter to quit.\n", m)
 		bufio.NewReader(os.Stdin).ReadBytes('\n')
 	}
+
+	defer gow32.ReleaseMutex(mutexId)
 }
 </code></pre>
 
